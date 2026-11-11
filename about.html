@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Chelsea Toni</title>
+  <meta name="description" content="About Chelsea Toni: New York-based artist and designer." />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="about">
+
+  <!-- red page-swipe used between pages -->
+  <div class="swipe" id="swipe" aria-hidden="true"></div>
+  <script>try{if(sessionStorage.getItem("swipe"))document.documentElement.classList.add("swipe-arrive")}catch(e){}</script>
+
+  <header class="nav" id="nav">
+    <nav class="nav-inner" aria-label="Main">
+      <ul class="links" id="links">
+        <li><a class="tag" href="design.html">Design</a></li>
+        <li><a class="tag" href="illustration.html">Illustration</a></li>
+        <li><a class="tag" href="about.html" aria-current="page">About</a></li>
+        <li><a class="tag" href="resume.html">Resume</a></li>
+        <li><a class="tag" href="contact.html">Contact</a></li>
+      </ul>
+      <button class="tag menu-btn" id="menuBtn" aria-expanded="false" aria-controls="links">Menu</button>
+    </nav>
+  </header>
+
+  <a class="logo" id="logo" href="index.html" aria-label="Chelsea Toni — home">
+    <span class="logo-inner">
+      <img class="logo-base" id="logoBase" src="assets/logo-sticker.png" alt="Chelsea Toni" width="1400" height="1027" />
+      <span class="flap-shadow" aria-hidden="true">
+        <img class="flap" id="logoFlap" src="assets/logo-sticker-back.png" alt="" />
+      </span>
+    </span>
+  </a>
+
+  <main class="page">
+    <h1 class="page-title">About</h1>
+
+    <div class="about-top">
+      <div class="about-photo" role="img" aria-label="Photo of Chelsea, coming soon">
+        <div class="ph"><span class="ph-mark">C<span>T</span></span><span class="ph-note">Photo coming soon</span></div>
+      </div>
+      <div class="about-bio">
+        <p class="about-lead">Bio coming soon.</p>
+        <a class="tag" href="resume.html">View my resume &rarr;</a>
+      </div>
+    </div>
+
+    <section class="res-sec" aria-labelledby="r-edu">
+      <h2 class="group-label" id="r-edu">Education</h2>
+      <div class="res-item">
+        <div class="res-head"><h3>St. John&rsquo;s University</h3><span>New York, NY</span></div>
+        <p class="res-role">BFA in Graphic Design</p>
+        <p class="res-date">Expected June 2028</p>
+        <p class="res-note">3.6 GPA &middot; Dean&rsquo;s List, 2024&ndash;2026</p>
+      </div>
+    </section>
+
+    <section class="res-sec" aria-labelledby="r-course">
+      <h2 class="group-label" id="r-course">Relevant coursework</h2>
+      <ul class="res-chips">
+        <li>Typography</li><li>Interaction Design</li><li>Motion Graphics</li><li>Foundation Design</li><li>Anatomy &amp; Figure Drawing</li><li>Three-Dimensional Design</li>
+      </ul>
+    </section>
+
+    <section class="res-sec" aria-labelledby="r-skills">
+      <h2 class="group-label" id="r-skills">Design &amp; technical skills</h2>
+      <dl class="res-skills">
+        <div><dt>UX/UI design</dt><dd>Wireframing, prototyping, user research, responsive web design, interaction design and visual communication</dd></div>
+        <div><dt>Tools</dt><dd>Figma, FigJam, Miro, Adobe Suite (Illustrator, InDesign, Photoshop, After Effects), Flora AI, Figma AI</dd></div>
+        <div><dt>Coding</dt><dd>HTML, CSS</dd></div>
+        <div><dt>Additional</dt><dd>Digital illustration, typography, motion graphics, social media content creation, Microsoft Suite</dd></div>
+      </dl>
+    </section>
+
+    <section class="res-sec" aria-labelledby="r-work">
+      <h2 class="group-label" id="r-work">Work experience</h2>
+
+      <div class="res-item">
+        <div class="res-head"><h3>Yeh Art Gallery</h3><span>Queens, New York</span></div>
+        <p class="res-role">Gallery Assistant</p>
+        <p class="res-date">December 2024 &ndash; Present</p>
+        <ul class="res-list">
+          <li>Support exhibition development, gallery operations and visitor engagement.</li>
+          <li>Provide customer service, assist with exhibitions and maintain the gallery space.</li>
+          <li>Handle artwork coming in and out of the gallery and keep the space tidy and organized.</li>
+          <li>Contribute to the gallery&rsquo;s social media and promotional efforts.</li>
+        </ul>
+      </div>
+
+      <div class="res-item">
+        <div class="res-head"><h3>Us Beauty Mart</h3><span>Atlanta, Georgia</span></div>
+        <p class="res-role">Sales Associate</p>
+        <p class="res-date">February 2024 &ndash; May 2024</p>
+        <ul class="res-list">
+          <li>Assisted customers with product selection, purchases and returns.</li>
+          <li>Maintained a tidy shopping environment by restocking products and reorganizing shelves.</li>
+        </ul>
+      </div>
+
+      <div class="res-item">
+        <div class="res-head"><h3>Evolving Learning Academy</h3><span>Atlanta, Georgia</span></div>
+        <p class="res-role">Teacher Assistant</p>
+        <p class="res-date">August 2023 &ndash; January 2024</p>
+        <ul class="res-list">
+          <li>Helped conduct daily lessons, teaching children critical language, motor and social skills.</li>
+          <li>Collaborated with parents on their children&rsquo;s progress and ensured parent satisfaction.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="res-end">
+      <a class="tag big dl" href="resume.html">View resume &rarr;</a>
+      <a class="tag" href="mailto:chelseanorth90@gmail.com">Email me</a>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

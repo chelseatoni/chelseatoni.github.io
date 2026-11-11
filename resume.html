@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume — Chelsea Toni</title>
+  <meta name="description" content="Resume of Chelsea Toni: graphic design student focused on UX/UI and product design." />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="resume">
+
+  <!-- red page-swipe used between pages -->
+  <div class="swipe" id="swipe" aria-hidden="true"></div>
+  <script>try{if(sessionStorage.getItem("swipe"))document.documentElement.classList.add("swipe-arrive")}catch(e){}</script>
+
+  <header class="nav" id="nav">
+    <nav class="nav-inner" aria-label="Main">
+      <ul class="links" id="links">
+        <li><a class="tag" href="design.html">Design</a></li>
+        <li><a class="tag" href="illustration.html">Illustration</a></li>
+        <li><a class="tag" href="about.html">About</a></li>
+        <li><a class="tag" href="resume.html" aria-current="page">Resume</a></li>
+        <li><a class="tag" href="contact.html">Contact</a></li>
+      </ul>
+      <button class="tag menu-btn" id="menuBtn" aria-expanded="false" aria-controls="links">Menu</button>
+    </nav>
+  </header>
+
+  <a class="logo" id="logo" href="index.html" aria-label="Chelsea Toni — home">
+    <span class="logo-inner">
+      <img class="logo-base" id="logoBase" src="assets/logo-sticker.png" alt="Chelsea Toni" width="1400" height="1027" />
+      <span class="flap-shadow" aria-hidden="true">
+        <img class="flap" id="logoFlap" src="assets/logo-sticker-back.png" alt="" />
+      </span>
+    </span>
+  </a>
+
+  <main class="page">
+    <h1 class="page-title">Resume</h1>
+
+    <div class="resume-actions">
+      <a class="tag big dl" href="assets/Chelsea_North_Resume.pdf" download>Download PDF &darr;</a>
+      <a class="tag" href="assets/Chelsea_North_Resume.pdf" target="_blank" rel="noopener">Open in new tab &nearr;</a>
+    </div>
+
+    <div class="pdf-frame">
+      <object data="assets/Chelsea_North_Resume.pdf#toolbar=0&amp;navpanes=0&amp;view=FitH" type="application/pdf" aria-label="Resume, PDF">
+        <a href="assets/Chelsea_North_Resume.pdf" target="_blank" rel="noopener"><img src="assets/resume-preview.jpg" alt="Resume of Chelsea North: education, skills and work experience. Open the PDF for the full text." /></a>
+      </object>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
