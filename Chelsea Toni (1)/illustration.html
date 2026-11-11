@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Illustration — Chelsea Toni</title>
+  <meta name="description" content="Illustration and paintings by Chelsea Toni." />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="illustration">
+
+  <!-- red page-swipe used between pages -->
+  <div class="swipe" id="swipe" aria-hidden="true"></div>
+  <script>try{if(sessionStorage.getItem("swipe"))document.documentElement.classList.add("swipe-arrive")}catch(e){}</script>
+
+  <header class="nav" id="nav">
+    <nav class="nav-inner" aria-label="Main">
+      <ul class="links" id="links">
+        <li><a class="tag" href="design.html">Design</a></li>
+        <li><a class="tag" href="illustration.html" aria-current="page">Illustration</a></li>
+        <li><a class="tag" href="about.html">About</a></li>
+        <li><a class="tag" href="resume.html">Resume</a></li>
+        <li><a class="tag" href="contact.html">Contact</a></li>
+      </ul>
+      <button class="tag menu-btn" id="menuBtn" aria-expanded="false" aria-controls="links">Menu</button>
+    </nav>
+  </header>
+
+  <a class="logo" id="logo" href="index.html" aria-label="Chelsea Toni — home">
+    <span class="logo-inner">
+      <img class="logo-base" id="logoBase" src="assets/logo-sticker.png" alt="Chelsea Toni" width="1400" height="1027" />
+      <span class="flap-shadow" aria-hidden="true">
+        <img class="flap" id="logoFlap" src="assets/logo-sticker-back.png" alt="" />
+      </span>
+    </span>
+  </a>
+
+  <main class="page">
+    <h1 class="page-title">Illustration</h1>
+    <p class="page-intro">Personal work: digital illustration and paintings.</p>
+
+    <div class="filters" role="group" aria-label="Filter work">
+      <button class="tag filter is-on" type="button" data-filter="all" aria-pressed="true">All</button>
+      <button class="tag filter" type="button" data-filter="illustration" aria-pressed="false">Illustration</button>
+      <button class="tag filter" type="button" data-filter="painting" aria-pressed="false">Painting</button>
+    </div>
+
+    <div class="gallery" id="gallery">
+        <button class="work-item" type="button" data-kind="illustration" data-full="assets/gallery/ill-01.jpg" data-alt="A wet black kitten in a bathtub with a rubber duck on its head" style="--tilt:-1.2deg">
+          <span class="work-img"><img src="assets/gallery/ill-01.jpg" alt="A wet black kitten in a bathtub with a rubber duck on its head" loading="lazy" /></span>
+          <span class="kind kind-illustration">Illustration</span>
+        </button>
+        <button class="work-item" type="button" data-kind="illustration" data-full="assets/gallery/ill-02.jpg" data-alt="A green-skinned figure with orange hair, seen from above, with a hand on a car steering wheel" style="--tilt:1deg">
+          <span class="work-img"><img src="assets/gallery/ill-02.jpg" alt="A green-skinned figure with orange hair, seen from above, with a hand on a car steering wheel" loading="lazy" /></span>
+          <span class="kind kind-illustration">Illustration</span>
+        </button>
+        <button class="work-item" type="button" data-kind="illustration" data-full="assets/gallery/ill-03.jpg" data-alt="A blue head with a cigarette against red, white smoke curling around it" style="--tilt:-0.6deg">
+          <span class="work-img"><img src="assets/gallery/ill-03.jpg" alt="A blue head with a cigarette against red, white smoke curling around it" loading="lazy" /></span>
+          <span class="kind kind-illustration">Illustration</span>
+        </button>
+        <button class="work-item" type="button" data-kind="painting" data-full="assets/gallery/ill-04.jpg" data-alt="A painted portrait of a figure with curly hair in blue light, in front of a red wall" style="--tilt:1.4deg">
+          <span class="work-img"><img src="assets/gallery/ill-04.jpg" alt="A painted portrait of a figure with curly hair in blue light, in front of a red wall" loading="lazy" /></span>
+          <span class="kind kind-painting">Painting</span>
+        </button>
+        <button class="work-item" type="button" data-kind="illustration" data-full="assets/gallery/ill-05.jpg" data-alt="A bald, bearded man in a white jacket smoking, against a blue background with red smoke" style="--tilt:-1deg">
+          <span class="work-img"><img src="assets/gallery/ill-05.jpg" alt="A bald, bearded man in a white jacket smoking, against a blue background with red smoke" loading="lazy" /></span>
+          <span class="kind kind-illustration">Illustration</span>
+        </button>
+        <button class="work-item" type="button" data-kind="illustration" data-full="assets/gallery/ill-06.jpg" data-alt="A man in a red shirt and black tie with a finger to his temple, against red with a white burst" style="--tilt:0.8deg">
+          <span class="work-img"><img src="assets/gallery/ill-06.jpg" alt="A man in a red shirt and black tie with a finger to his temple, against red with a white burst" loading="lazy" /></span>
+          <span class="kind kind-illustration">Illustration</span>
+        </button>
+        <button class="work-item" type="button" data-kind="illustration" data-full="assets/gallery/ill-07.jpg" data-alt="A grey hand holding a cigarette with square white smoke, on red" style="--tilt:-1.2deg">
+          <span class="work-img"><img src="assets/gallery/ill-07.jpg" alt="A grey hand holding a cigarette with square white smoke, on red" loading="lazy" /></span>
+          <span class="kind kind-illustration">Illustration</span>
+        </button>
+        <button class="work-item" type="button" data-kind="illustration" data-full="assets/gallery/ill-08.jpg" data-alt="The lower half of a face with its mouth open, shouting, on yellow" style="--tilt:1deg">
+          <span class="work-img"><img src="assets/gallery/ill-08.jpg" alt="The lower half of a face with its mouth open, shouting, on yellow" loading="lazy" /></span>
+          <span class="kind kind-illustration">Illustration</span>
+        </button>
+        <button class="work-item" type="button" data-kind="illustration" data-full="assets/gallery/ill-09.jpg" data-alt="A man in a loosened tie smoking in an armchair, on a teal background" style="--tilt:-0.6deg">
+          <span class="work-img"><img src="assets/gallery/ill-09.jpg" alt="A man in a loosened tie smoking in an armchair, on a teal background" loading="lazy" /></span>
+          <span class="kind kind-illustration">Illustration</span>
+        </button>
+        <button class="work-item" type="button" data-kind="illustration" data-full="assets/gallery/ill-10.jpg" data-alt="A guitarist in a striped tie swinging a bass, on red with a white star" style="--tilt:1.4deg">
+          <span class="work-img"><img src="assets/gallery/ill-10.jpg" alt="A guitarist in a striped tie swinging a bass, on red with a white star" loading="lazy" /></span>
+          <span class="kind kind-illustration">Illustration</span>
+        </button>
+        <button class="work-item" type="button" data-kind="painting" data-full="assets/gallery/ill-11.jpg" data-alt="A painted portrait in oranges and yellows of a figure with a cigarette, on white" style="--tilt:-1deg">
+          <span class="work-img"><img src="assets/gallery/ill-11.jpg" alt="A painted portrait in oranges and yellows of a figure with a cigarette, on white" loading="lazy" /></span>
+          <span class="kind kind-painting">Painting</span>
+        </button>
+        <button class="work-item" type="button" data-kind="painting" data-full="assets/gallery/ill-12.jpg" data-alt="A painted head in profile in oranges and yellows on a dark ground, with a cigarette" style="--tilt:0.8deg">
+          <span class="work-img"><img src="assets/gallery/ill-12.jpg" alt="A painted head in profile in oranges and yellows on a dark ground, with a cigarette" loading="lazy" /></span>
+          <span class="kind kind-painting">Painting</span>
+        </button>
+        <button class="work-item" type="button" data-kind="painting" data-full="assets/gallery/ill-13.jpg" data-alt="A painting of two skulls in a dark room" style="--tilt:-1.2deg">
+          <span class="work-img"><img src="assets/gallery/ill-13.jpg" alt="A painting of two skulls in a dark room" loading="lazy" /></span>
+          <span class="kind kind-painting">Painting</span>
+        </button>
+    </div>
+
+    <a class="tag back-home" href="index.html#client-work">&larr; Back to client work</a>
+  </main>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged artwork" hidden>
+    <button class="tag lb-close" type="button" id="lbClose">Close &times;</button>
+    <figure class="lb-fig">
+      <img id="lbImg" src="" alt="" />
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
