@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Logo design — Chelsea Toni</title>
+  <meta name="description" content="The process of designing the Chelsea Toni logo, from marker sketches to the final sticker." />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="design">
+
+  <div class="swipe" id="swipe" aria-hidden="true"></div>
+  <script>try{if(sessionStorage.getItem("swipe"))document.documentElement.classList.add("swipe-arrive")}catch(e){}</script>
+
+  <header class="nav" id="nav">
+    <nav class="nav-inner" aria-label="Main">
+      <ul class="links" id="links">
+        <li><a class="tag" href="design.html" aria-current="page">Design</a></li>
+        <li><a class="tag" href="illustration.html">Illustration</a></li>
+        <li><a class="tag" href="about.html">About</a></li>
+        <li><a class="tag" href="resume.html">Resume</a></li>
+        <li><a class="tag" href="contact.html">Contact</a></li>
+      </ul>
+      <button class="tag menu-btn" id="menuBtn" aria-expanded="false" aria-controls="links">Menu</button>
+    </nav>
+  </header>
+
+  <a class="logo" id="logo" href="index.html" aria-label="Chelsea Toni — home">
+    <span class="logo-inner">
+      <img class="logo-base" id="logoBase" src="assets/logo-sticker.png" alt="Chelsea Toni" width="1400" height="1027" />
+      <span class="flap-shadow" aria-hidden="true">
+        <img class="flap" id="logoFlap" src="assets/logo-sticker-back.png" alt="" />
+      </span>
+    </span>
+  </a>
+
+  <main class="page">
+    <a class="tag back" href="design.html">&larr; Design</a>
+
+    <section class="overview">
+      <div class="cover">
+        <img src="assets/logo/logo-cover.jpg" alt="The Chelsea Toni logo: white lettering with a red shadow, black outline and two stars" />
+      </div>
+
+      <div class="info">
+        <p class="eyebrow">Identity design &middot; Personal brand</p>
+        <h1 class="proj-title">My logo</h1>
+        <dl class="meta">
+          <div><dt>Project</dt><dd>Personal logo</dd></div>
+          <div><dt>Role</dt><dd>Concept, lettering &amp; color</dd></div>
+          <div><dt>Tools</dt><dd>Adobe Illustrator</dd></div>
+        </dl>
+        <p class="blurb">My process for creating a logo for my personal brand. It started as pages of marker sketches and was refined by hand before being redrawn as a vector using Adobe Illustrator.</p>
+      </div>
+    </section>
+
+    <section class="process" aria-labelledby="p1">
+      <h2 class="step-title" id="p1"><span>01</span> Sketching</h2>
+      <p class="step-text">I started with focusing on how Toni or CT would look. My initial idea was a logo with bold, blocky letters. I then tried stars, arrows, a burst and even my last name, &ldquo;North&rdquo;, before choosing the full 
+        "Chelsea Toni."</p>
+      <div class="pgrid pgrid--4">
+        <figure class="shot"><img src="assets/logo/logo-1.jpg" alt="Marker sketches of the word TONI in heavy blocky letters" loading="lazy" /></figure>
+        <figure class="shot"><img src="assets/logo/logo-2.jpg" alt="Marker sketches of TONI with a north star and an arrow" loading="lazy" /></figure>
+        <figure class="shot"><img src="assets/logo/logo-3.jpg" alt="Outlined sketches: TONI with a star, and the first Chelsea Toni burst" loading="lazy" /></figure>
+        <figure class="shot"><img src="assets/logo/logo-4.jpg" alt="Outlined sketches of TONI with a star in the O and a spiked burst" loading="lazy" /></figure>
+      </div>
+    </section>
+
+    <section class="process" aria-labelledby="p2">
+      <h2 class="step-title" id="p2"><span>02</span> Finalizing the design and color</h2>
+      <p class="step-text">The strongest idea was the full name stacked inside a edgy shape, as it showed personality and represented my work better than the static "Toni" designs. I inked two versions by hand, chose one, then advanced it in Adobe Illustrator.</p>
+      <div class="pgrid pgrid--2">
+        <figure class="shot shot--wide"><img src="assets/logo/logo-5.jpg" alt="Two inked versions of the Chelsea Toni logo with stars" loading="lazy" /><figcaption>Two inked versions</figcaption></figure>
+        <figure class="shot shot--center"><img src="assets/logo/logo-6.jpg" alt="The logo printed in black and in red" loading="lazy" /><figcaption>Color test: black and red</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="process" aria-labelledby="p3">
+      <h2 class="step-title" id="p3"><span>03</span> The final logo</h2>
+      <p class="step-text">The final version is white lettering with a red shadow inside a black outline. It became the logo on my website! I presented it as a sticker that peels off the page when you hover over itand sticks into the navigation as you scroll.</p>
+      <div class="pgrid pgrid--2">
+        <figure class="shot"><img src="assets/logo/logo-7.jpg" alt="The final logo printed in black, white and red" loading="lazy" /><figcaption>The official print</figcaption></figure>
+        <figure class="shot shot--final"><img src="assets/logo-sticker.png" alt="The final Chelsea Toni logo as used on this website" loading="lazy" /><figcaption>On this website</figcaption></figure>
+      </div>
+    </section>
+
+    <p class="made-with">Sketched by hand in marker, finished in Adobe Illustrator.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -886,3 +886,26 @@ a.cover:hover, a.cover:focus-visible { transform: rotate(0deg) translateY(-6px) 
 .made-with { margin: 64px auto 0; max-width: 900px; font-size: 1rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--paper); }
 .note-small { margin: 12px auto 0; max-width: 900px; font-size: 13px; opacity: .6; }
 .about-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* Logo process */
+.process { max-width: 1000px; margin: 110px auto 0; }
+.step-title { font-family: 'Anton', Impact, sans-serif; font-weight: 400; font-size: clamp(1.8rem, 4vw, 2.6rem); text-transform: uppercase; letter-spacing: 0.02em; color: var(--paper); }
+.step-title span { color: var(--red); margin-right: 14px; }
+.step-text { font-family: Arial, Helvetica, sans-serif; font-size: 1.1rem; line-height: 1.7; color: rgba(255,255,255,0.72); max-width: 62ch; margin: 16px 0 36px; }
+.pgrid { display: grid; gap: 28px; }
+.pgrid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.pgrid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.pgrid .shot { margin: 0; }
+.pgrid .shot img { width: 100%; height: 100%; display: block; border-radius: 6px; box-shadow: 8px 8px 0 var(--red); object-fit: cover; }
+.pgrid--4 .shot img { aspect-ratio: 4 / 5; }
+.pgrid--2 .shot img { aspect-ratio: 4 / 5; }
+.pgrid .shot--final { display: flex; flex-direction: column; justify-content: center; }
+.pgrid .shot--final img { height: auto; aspect-ratio: auto; object-fit: contain; box-shadow: none; filter: drop-shadow(8px 8px 0 var(--red)); background: none; }
+.pgrid figcaption { margin-top: 16px; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--paper); opacity: .8; }
+.pgrid .shot--wide { grid-column: 1 / -1; }
+.pgrid .shot--wide img { aspect-ratio: 4 / 3; }
+.pgrid .shot--center { grid-column: 1 / -1; width: min(50%, 480px); justify-self: center; }
+.made-with { margin: 64px auto 0; max-width: 900px; font-size: 1rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--paper); }
+@media (max-width: 640px) {
+  .pgrid--4, .pgrid--2 { grid-template-columns: 1fr; }
+  .pgrid .shot--center { width: 100%; }
+}
