@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dracula — Chelsea Toni</title>
+  <meta name="description" content="Vinyl packaging concept for Dracula by Tame Impala, by Chelsea Toni." />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="design">
+
+  <!-- red page-swipe used between pages -->
+  <div class="swipe" id="swipe" aria-hidden="true"></div>
+  <script>try{if(sessionStorage.getItem("swipe"))document.documentElement.classList.add("swipe-arrive")}catch(e){}</script>
+
+  <header class="nav" id="nav">
+    <nav class="nav-inner" aria-label="Main">
+      <ul class="links" id="links">
+        <li><a class="tag" href="design.html" aria-current="page">Design</a></li>
+        <li><a class="tag" href="illustration.html">Illustration</a></li>
+        <li><a class="tag" href="about.html">About</a></li>
+        <li><a class="tag" href="resume.html">Resume</a></li>
+        <li><a class="tag" href="contact.html">Contact</a></li>
+      </ul>
+      <button class="tag menu-btn" id="menuBtn" aria-expanded="false" aria-controls="links">Menu</button>
+    </nav>
+  </header>
+
+  <a class="logo" id="logo" href="index.html" aria-label="Chelsea Toni — home">
+    <span class="logo-inner">
+      <img class="logo-base" id="logoBase" src="assets/logo-sticker.png" alt="Chelsea Toni" width="1400" height="1027" />
+      <span class="flap-shadow" aria-hidden="true">
+        <img class="flap" id="logoFlap" src="assets/logo-sticker-back.png" alt="" />
+      </span>
+    </span>
+  </a>
+
+  <main class="page">
+    <a class="tag back" href="design.html">&larr; Design</a>
+
+    <section class="overview">
+      <div class="cover">
+        <img src="assets/dracula/dracula-front.jpg" alt="Dracula by Tame Impala: vinyl sleeve with a black open mouth and white fangs, and the record sliding out" />
+      </div>
+
+      <div class="info">
+        <p class="eyebrow">Packaging design &middot; Concept</p>
+        <h1 class="proj-title">Dracula</h1>
+        <dl class="meta">
+          <div><dt>Project</dt><dd>Single sleeve &amp; record label</dd></div>
+          <div><dt>Role</dt><dd>Illustration, typography &amp; layout</dd></div>
+          <div><dt>Context</dt><dd>Concept Project</dd></div>
+        </dl>
+        <p class="blurb">Conceptual design for a vinyl single sleeve for &ldquo;Dracula&rdquo; by Tame Impala.</p>
+      </div>
+    </section>
+
+    <section class="sleeves" aria-label="The sleeve and record label">
+      <figure class="shot">
+        <img src="assets/dracula/dracula-front.jpg" alt="Front of the sleeve: the title sits inside an open mouth of fangs" />
+        <figcaption>Front</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="assets/dracula/dracula-back.jpg" alt="Back of the sleeve with liner notes, the Columbia logo and a barcode" />
+        <figcaption>Back</figcaption>
+      </figure>
+      <figure class="shot shot--sticker">
+        <img src="assets/dracula/dracula-sticker.png" alt="The round record label sticker: red fangs above the title" />
+        <figcaption>The record label sticker</figcaption>
+      </figure>
+    </section>
+
+    <p class="made-with">Made with Adobe Illustrator and Photoshop.</p>
+    <p class="note-small">Student concept. Tame Impala, Columbia Records and the song are the property of their owners.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

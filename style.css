@@ -340,8 +340,16 @@ html.swipe-arrive .swipe { transform: none; transition: none; }
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 340px));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 44px 40px;
+}
+
+@media (max-width: 900px) {
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 560px) {
+  .cards { grid-template-columns: 1fr; }
 }
 
 .card {
@@ -372,8 +380,8 @@ html.swipe-arrive .swipe { transform: none; transition: none; }
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
   gap: 56px;
   align-items: center;
+  margin-bottom: 130px;
 }
-
 .cover {
   background: var(--paper);
   padding: 14px;
@@ -866,3 +874,15 @@ a.cover:hover, a.cover:focus-visible { transform: rotate(0deg) translateY(-6px) 
 .about-photo .ph { aspect-ratio: 4 / 5; }
 .about-lead { font-family: Arial, Helvetica, sans-serif; font-size: 1.3rem; line-height: 1.6; color: rgba(255,255,255,0.7); max-width: 52ch; margin-bottom: 28px; }
 @media (max-width: 860px) { .about-top { grid-template-columns: 1fr; gap: 36px; } .about-photo { max-width: 340px; } .pdf-frame { aspect-ratio: auto; min-height: 0; } .pdf-frame object { height: auto; } }
+.about-note { font-family: Arial, Helvetica, sans-serif; font-size: 1.1rem; line-height: 1.6; color: rgba(255,255,255,0.7); max-width: 52ch; margin: 28px 0; }
+
+/* Dracula project */
+.sleeves { display: grid; gap: 40px; margin-top: 72px; max-width: 900px; margin-left: auto; margin-right: auto; }
+.sleeves .shot { margin: 0; }
+.sleeves .shot img { width: 100%; height: auto; display: block; border-radius: 6px; box-shadow: 8px 8px 0 var(--red); }
+.sleeves figcaption { margin-top: 18px; font-size: 0.95rem; letter-spacing: 0.1em; text-transform: uppercase; opacity: .8; }
+.sleeves .shot--sticker { text-align: center; }
+.sleeves .shot--sticker img { width: min(420px, 80%); margin: 0 auto; border-radius: 50%; box-shadow: none; }
+.made-with { margin: 64px auto 0; max-width: 900px; font-size: 1rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--paper); }
+.note-small { margin: 12px auto 0; max-width: 900px; font-size: 13px; opacity: .6; }
+.about-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
